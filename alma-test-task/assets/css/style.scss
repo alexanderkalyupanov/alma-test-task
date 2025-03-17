@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url('../fonts/OpenSans-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+:root {
+  --static-white: #FFFFFF;
+  --dark: #3F3F3F;
+  --static-gray: #ADADAD;
+  --dark-gray: #8B8B8B;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
