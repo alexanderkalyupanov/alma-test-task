@@ -135,4 +135,63 @@ body {
   left: 50%;
   width: 71px;
   height: 71px;
+}
+
+.about-us__title {
+  padding-top: 65px;
+  font-size: 2.125rem;
+  text-align: center;
+}
+.about-us__subtitle {
+  margin-top: 30px;
+  font-size: 4px;
+  text-align: center;
+}
+.about-us__subtitlespan {
+  margin-top: 20px;
+}
+.about-us__items {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.about-us__text {
+  color: var(--static-white);
+}
+.about-us__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+.about-us__item--blue {
+  background-color: #4EB9F4;
+}
+.about-us__item--green {
+  background-color: #6FC125;
+}
+.about-us__item--red {
+  background-color: #FF5649;
+  position: relative;
+}
+.about-us__item--red::before {
+  content: "'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </br> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`";
+  position: absolute;
+  color: var(--static-white);
+  font-size: 4px;
+  max-width: 130px;
+}
+.about-us__item--orange {
+  background-color: var(--dark-orange);
+}
+
+.text-opacity {
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
