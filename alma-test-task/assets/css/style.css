@@ -53,6 +53,7 @@ body {
   font-size: 0.875rem;
   border-radius: 5px;
   padding: 0.4em 1.121em;
+  cursor: pointer;
 }
 .nav__block {
   display: flex;
@@ -75,6 +76,11 @@ body {
 .nav__link {
   font-size: 1.05em;
   letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.nav__link:hover {
+  color: var(--dark-orange);
 }
 
 .header__container {
@@ -85,26 +91,48 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .header__info {
   display: flex;
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 42.5em;
   padding-top: 300px;
   flex-direction: column;
 }
-
 .header__title {
-  font-size: 5em;
+  text-transform: uppercase;
+  font-size: 4.5em;
   margin: 0;
+  font-weight: 100;
 }
-
 .header__subtitle {
   font-size: 1.7em;
   text-align: end;
 }
-
-.header__title,
-.header__subtitle {
+.header__title, .header__subtitle {
   color: var(--static-white);
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--static-white);
+  opacity: 0.7;
+}
+.circle--first {
+  bottom: 32%;
+  left: 46%;
+  width: 117px;
+  height: 117px;
+}
+.circle--second {
+  bottom: 44%;
+  left: 49%;
+  width: 92px;
+  height: 92px;
+}
+.circle--third {
+  bottom: 35%;
+  left: 50%;
+  width: 71px;
+  height: 71px;
 }/*# sourceMappingURL=style.css.map */
