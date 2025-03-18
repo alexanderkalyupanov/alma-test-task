@@ -37,45 +37,50 @@ body {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--static-white);
   opacity: 0.9;
-  padding: 1.4rem 1rem;
+  padding: 1.4rem 10.75rem 1.47rem 10rem;
 }
 .nav__button {
   display: flex;
-  gap: 6px;
+  gap: 10px;
   align-items: center;
   border: none;
   background-color: var(--orange);
   color: var(--static-white);
-  font-size: 0.875rem;
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
   border-radius: 5px;
-  padding: 0.4em 1.121em;
+  padding: 0.3rem 0.65rem;
   cursor: pointer;
+  margin-top: 8px;
 }
 .nav__block {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 35px;
 }
 .nav__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 7px;
-  gap: 32px;
+  padding-top: 10px;
+  gap: 30px;
 }
 .nav__logo {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
+  line-height: 105%;
+  letter-spacing: 0.1rem;
 }
 .nav__logo span {
   color: var(--orange);
 }
 .nav__link {
-  font-size: 1.05em;
-  letter-spacing: 0.04em;
+  display: block;
+  font-size: 1.035rem;
+  letter-spacing: 0.045rem;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
 }
@@ -83,8 +88,10 @@ body {
   color: var(--dark-orange);
 }
 
-.header__container {
+.header {
   position: relative;
+}
+.header__container {
   height: 36.875rem;
   background-image: url("./../img/background.jpg");
   background-position: 100% 7%;
@@ -94,19 +101,22 @@ body {
 .header__info {
   display: flex;
   margin: 0 auto;
-  max-width: 42.5em;
-  padding-top: 300px;
+  max-width: 41rem;
+  padding-top: 313px;
   flex-direction: column;
 }
 .header__title {
   text-transform: uppercase;
-  font-size: 4.5em;
+  font-size: 4rem;
   margin: 0;
   font-weight: 100;
+  line-height: 115%;
 }
 .header__subtitle {
-  font-size: 1.7em;
-  text-align: end;
+  display: block;
+  max-width: 93.7%;
+  font-size: 1.685rem;
+  text-align: right;
 }
 .header__title, .header__subtitle {
   color: var(--static-white);
@@ -119,20 +129,20 @@ body {
   opacity: 0.7;
 }
 .circle--first {
-  bottom: 32%;
+  bottom: 35%;
   left: 46%;
   width: 117px;
   height: 117px;
 }
 .circle--second {
-  bottom: 44%;
+  bottom: 46%;
   left: 49%;
   width: 92px;
   height: 92px;
 }
 .circle--third {
-  bottom: 35%;
-  left: 50%;
+  bottom: 39%;
+  left: 50.55%;
   width: 71px;
   height: 71px;
 }
