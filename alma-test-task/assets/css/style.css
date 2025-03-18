@@ -194,4 +194,24 @@ body {
 
 .text-opacity {
   opacity: 0.5;
+}
+
+.services__list {
+  margin-top: 6.25em;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  flex-direction: column;
+}
+.services__item {
+  display: flex;
+  max-width: 59.3em;
+  gap: 25px;
+}
+.services__title {
+  font-size: 1.625em;
+  margin-bottom: 0.8em;
+}
+.services__text {
+  color: var(--dark-gray);
 }/*# sourceMappingURL=style.css.map */

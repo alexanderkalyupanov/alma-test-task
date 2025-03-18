@@ -211,3 +211,27 @@ body {
 .text-opacity {
   opacity: 0.5;
 }
+
+// Services section
+
+.services {
+  &__list {
+    margin-top: 6.25em;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    max-width: 59.3em;
+    gap: 25px;
+  }
+  &__title {
+    font-size: 1.625em;
+    margin-bottom: 0.8em;
+  }
+  &__text {
+    color: var(--dark-gray);
+  }
+}
