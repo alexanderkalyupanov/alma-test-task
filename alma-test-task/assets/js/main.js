@@ -1,6 +1,5 @@
 const burgerBtn = document.querySelector(".hamburger__icon");
 const navList = document.querySelector(".nav__block");
-// const navBar = document.querySelector(".nav")
 const body = document.querySelector(".body")
 
 burgerBtn.addEventListener("click", () => {

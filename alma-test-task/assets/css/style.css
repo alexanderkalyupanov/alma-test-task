@@ -24,6 +24,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -118,8 +119,8 @@ body {
 .header__info {
   margin: 0 auto;
   text-align: center;
-  padding-top: 160px;
-  padding-bottom: 82px;
+  padding-top: 10rem;
+  padding-bottom: 5.125rem;
   flex-direction: column;
 }
 .header__title {
@@ -154,7 +155,7 @@ body {
 .about-us__title {
   margin: 0 auto;
   display: block;
-  padding-top: 58px;
+  padding-top: 3.625rem;
   font-size: 2.125rem;
   letter-spacing: 0.065rem;
   font-weight: 100;
@@ -171,7 +172,7 @@ body {
   margin-top: 20px;
 }
 .about-us__items {
-  padding-top: 80px;
+  padding-top: 5rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -314,6 +315,12 @@ body {
 .footer .img-twitter {
   padding-top: 15px;
 }
+.footer__link {
+  transition: all 0.3s ease-in-out;
+}
+.footer__link:hover {
+  color: var(--dark-orange);
+}
 
 .hamburger__icon {
   display: flex;
@@ -350,23 +357,21 @@ body {
 
 @media screen and (max-width: 1200px) {
   .footer__box {
-    padding: 2rem 0rem;
+    padding: 2rem 1rem;
   }
 }
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0 1.5rem;
   }
-  .footer__box {
-    justify-content: center;
-  }
+  .footer__box,
   .footer__main {
     justify-content: center;
   }
 }
 @media screen and (max-width: 950px) {
   .services__container {
-    padding: 0 0.3rem;
+    padding: 0 1.75rem;
   }
   .nav .container {
     max-width: 750px;
@@ -379,6 +384,13 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .header__title {
+    width: 100%;
+    font-size: 3.5rem;
+  }
+  .header__subtitle {
+    width: 100%;
+  }
   .hamburger__icon {
     display: flex;
   }
@@ -404,6 +416,9 @@ body {
   }
   .nav__block.active {
     right: 0;
+  }
+  .about-us__items {
+    padding-top: 3.125rem;
   }
 }
 @media screen and (max-width: 620px) {
@@ -432,5 +447,16 @@ body {
   }
   .nav__block {
     width: 60vw;
+  }
+  .header__title {
+    font-size: 2.5rem;
+  }
+  .header__subtitle {
+    font-size: 1.15rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__title {
+    font-size: 1.95rem;
   }
 }/*# sourceMappingURL=style.css.map */

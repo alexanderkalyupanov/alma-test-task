@@ -25,7 +25,8 @@
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -65,24 +66,24 @@ body {
   }
   &__button {
     display: flex;
-      gap: 7px;
-      align-items: center;
-      border: none;
-      background-color: var(--orange);
-      color: var(--static-white);
-      font-size: 1rem;
-      letter-spacing: 0.07rem;
-      border-radius: 5px;
-      padding: 0.275rem 0.65rem;
-      cursor: pointer;
-      margin-top: 12px;
-      margin-right: 9px;
+    gap: 7px;
+    align-items: center;
+    border: none;
+    background-color: var(--orange);
+    color: var(--static-white);
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    border-radius: 5px;
+    padding: 0.275rem 0.65rem;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-right: 9px;
   }
   &__block {
     display: flex;
     align-items: center;
     gap: 35px;
-        transition: all .6s linear;
+    transition: all .6s linear;
   }
   &__list {
     display: flex;
@@ -124,8 +125,8 @@ body {
   &__info {
     margin: 0 auto;
     text-align: center;
-    padding-top: 160px;
-    padding-bottom: 82px;
+    padding-top: 10rem;
+    padding-bottom: 5.125rem;
     flex-direction: column;
   }
   &__title {
@@ -149,7 +150,6 @@ body {
   }
 }
 
-
 .circles {
   bottom: 17px;
   position: relative;
@@ -166,7 +166,7 @@ body {
   &__title {
     margin: 0 auto;
     display: block;
-    padding-top: 58px;
+    padding-top: 3.625rem;
     font-size: 2.125rem;
     letter-spacing: 0.065rem;
     font-weight: 100;
@@ -183,7 +183,7 @@ body {
     }
   }
   &__items {
-    padding-top: 80px;
+    padding-top: 5rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -259,10 +259,10 @@ body {
   }
   &__text {
     color: var(--dark-gray);
-      font-size: 0.9375rem;
-        line-height: 140%;
-        letter-spacing: 0.02rem;
-        text-align: justify;
+    font-size: 0.9375rem;
+    line-height: 140%;
+    letter-spacing: 0.02rem;
+    text-align: justify;
   }
   &__images {
     max-width: 200px;
@@ -272,7 +272,6 @@ body {
 
 // Footer
 .footer {
-
   background-color: #232b26;
   &__container {
     max-width: 1060px;
@@ -312,7 +311,6 @@ body {
     gap: 23px;
     flex-wrap: wrap;
     max-width: 290px;
-
     span {
       color: var(--dark-gray);
     }
@@ -333,24 +331,31 @@ body {
   .img-twitter {
     padding-top: 15px;
   }
+  &__link {
+    transition: all .3s ease-in-out;
+  }
+  &__link:hover {
+    color: var(--dark-orange);
+  }
 }
+
+// Hamburger Icons
 
 .hamburger {
   &__icon {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
   &__line {
-      position: absolute;
-      width: 20px;
-      height: 2px;
-      background-color: var(--dark);
-      transition: all .3s ease;
-    }
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: var(--dark);
+    transition: all .3s ease;
+  }
   &--line2 {
     top: 7px;
   }
@@ -371,10 +376,10 @@ body {
   }
 }
 
-
+// Media Quries
 @media screen and (max-width: 1200px) {
   .footer__box {
-    padding: 2rem 0rem;
+    padding: 2rem 1rem;
   }
 }
 
@@ -382,9 +387,7 @@ body {
   .container {
     padding: 0 1.5rem;
   }
-  .footer__box {
-    justify-content: center;
-  }
+  .footer__box,
   .footer__main {
     justify-content: center;
   }
@@ -392,7 +395,7 @@ body {
 
 @media screen and (max-width: 950px) {
   .services__container {
-    padding: 0 0.3rem;
+    padding: 0 1.75rem;
   }
   .nav {
     .container {
@@ -408,6 +411,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .header__title {
+    width: 100%;
+    font-size: 3.5rem;
+  }
+  .header__subtitle {
+    width: 100%;
+  }
   .hamburger__icon {
     display: flex;
   }
@@ -431,9 +441,11 @@ body {
     justify-content: center;
     align-items: center;
   }
-
   .nav__block.active {
     right: 0;
+  }
+  .about-us__items {
+    padding-top: 3.125rem;
   }
 }
 
@@ -466,5 +478,17 @@ body {
   }
   .nav__block {
     width: 60vw;
+  }
+  .header__title {
+    font-size: 2.5rem;
+  }
+  .header__subtitle {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__title {
+    font-size: 1.95rem;
   }
 }
