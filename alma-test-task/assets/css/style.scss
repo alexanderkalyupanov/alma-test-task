@@ -22,6 +22,9 @@
   --dark-gray: #8B8B8B;
   --dark-orange: #B73958;
   --orange: #DE6D6E;
+  --blue: #4EB9F4;
+  --green: #6FC125;
+  --red: #FF5649;
 }
 
 html {
@@ -206,13 +209,13 @@ body {
     height: 180px;
     border-radius: 50%;
     &--blue {
-      background-color: #4EB9F4;
+      background-color: var(--blue);
     }
     &--green {
-      background-color: #6FC125;
+      background-color: var(--green);
     }
     &--red {
-      background-color: #FF5649;
+      background-color: var(--red);
       position: relative;
       &::before {
         content: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the undustry's standard";
@@ -294,7 +297,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     span {
-      color: #ADADAD;
+      color: var(--static-gray);
       font-size: 1.3125rem;
       margin-bottom: 20px;
     }

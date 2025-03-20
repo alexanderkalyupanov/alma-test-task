@@ -20,6 +20,9 @@
   --dark-gray: #8B8B8B;
   --dark-orange: #B73958;
   --orange: #DE6D6E;
+  --blue: #4EB9F4;
+  --green: #6FC125;
+  --red: #FF5649;
 }
 
 html {
@@ -196,13 +199,13 @@ body {
   border-radius: 50%;
 }
 .about-us__item--blue {
-  background-color: #4EB9F4;
+  background-color: var(--blue);
 }
 .about-us__item--green {
-  background-color: #6FC125;
+  background-color: var(--green);
 }
 .about-us__item--red {
-  background-color: #FF5649;
+  background-color: var(--red);
   position: relative;
 }
 .about-us__item--red::before {
@@ -279,7 +282,7 @@ body {
   flex-wrap: wrap;
 }
 .footer__list span {
-  color: #ADADAD;
+  color: var(--static-gray);
   font-size: 1.3125rem;
   margin-bottom: 20px;
 }
